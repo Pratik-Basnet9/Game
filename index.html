@@ -1,356 +1,879 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <!-- Website Title -->
     <title>ThinkiX | Spot the Cyber Threat</title>
 
-    <link rel="stylesheet" href="game.css" />
-  </head>
+    <!-- Website Description -->
+    <meta name="description"
+          content="Protect the ThinkiX Smart Factory in this interactive IoT cybersecurity challenge.">
 
-  <body>
-    <main class="game-container">
-      <!-- ============================= -->
-      <!-- START SCREEN -->
-      <!-- ============================= -->
+    <!-- Link Preview -->
+    <meta property="og:title"
+          content="ThinkiX | Spot the Cyber Threat">
 
-      <section id="startScreen" class="screen active">
+    <meta property="og:description"
+          content="Can you protect the ThinkiX Smart Factory? Identify safe network activity and cyber threats in this interactive cybersecurity challenge.">
+
+    <meta property="og:type"
+          content="website">
+
+    <meta property="og:url"
+          content="https://pratik-basnet9.github.io/Game/">
+
+    <meta name="theme-color"
+          content="#020b16">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="game.css">
+</head>
+
+
+<body>
+
+<main class="game-container">
+
+
+    <!-- ====================================== -->
+    <!-- START SCREEN -->
+    <!-- ====================================== -->
+
+    <section id="startScreen" class="screen active">
+
         <div class="brand">
-          <h1>Thinki<span>X</span></h1>
-          <p>Because Every Device Matters.</p>
+            <h1>Thinki<span>X</span></h1>
+            <p>Because Every Device Matters.</p>
         </div>
+
 
         <div class="start-content">
-          <div class="shield-icon">🛡️</div>
 
-          <p class="game-label">SMART MANUFACTURING SECURITY CHALLENGE</p>
-
-          <h2>
-            SPOT THE<br />
-            <span>CYBER THREAT</span>
-          </h2>
-
-          <p class="game-description">
-            The ThinkiX Smart Factory is under your protection. Watch the
-            network events and decide whether each one is
-            <strong>SAFE</strong> or a <strong>THREAT</strong>.
-          </p>
-
-          <!-- GAME INFORMATION -->
-
-          <div class="game-info">
-            <div class="info-box">
-              <div class="info-icon">⏱️</div>
-              <strong>45 SEC</strong>
-              <small>Beat the clock</small>
+            <div class="shield-icon">
+                🛡️
             </div>
 
-            <div class="info-box">
-              <div class="info-icon">⚡</div>
-              <strong>FAST</strong>
-              <small>React quickly</small>
+            <p class="game-label">
+                SMART MANUFACTURING SECURITY CHALLENGE
+            </p>
+
+            <h2>
+                SPOT THE<br>
+                <span>CYBER THREAT</span>
+            </h2>
+
+
+            <p class="game-description">
+
+                The ThinkiX Smart Factory is under your protection.
+
+                Watch the network events and decide whether
+                each activity is
+
+                <strong>SAFE</strong>
+
+                or a
+
+                <strong>THREAT</strong>.
+
+            </p>
+
+
+            <!-- GAME INFORMATION -->
+
+            <div class="game-info">
+
+                <div class="info-box">
+
+                    <div class="info-icon">
+                        ⏱️
+                    </div>
+
+                    <strong>45 SEC</strong>
+
+                    <small>
+                        Beat the clock
+                    </small>
+
+                </div>
+
+
+                <div class="info-box">
+
+                    <div class="info-icon">
+                        ⚡
+                    </div>
+
+                    <strong>FAST</strong>
+
+                    <small>
+                        React quickly
+                    </small>
+
+                </div>
+
+
+                <div class="info-box">
+
+                    <div class="info-icon">
+                        🏆
+                    </div>
+
+                    <strong>SCORE</strong>
+
+                    <small>
+                        Earn your rank
+                    </small>
+
+                </div>
+
             </div>
 
-            <div class="info-box">
-              <div class="info-icon">🏆</div>
-              <strong>SCORE</strong>
-              <small>Earn your rank</small>
+
+
+            <!-- HOW TO PLAY -->
+
+            <div class="instructions">
+
+                <h3>
+                    HOW TO PLAY
+                </h3>
+
+
+                <div class="instruction-row">
+
+
+                    <div class="instruction">
+
+                        <span>1</span>
+
+                        <p>
+                            Read the network event.
+                        </p>
+
+                    </div>
+
+
+                    <div class="instruction">
+
+                        <span>2</span>
+
+                        <p>
+                            Decide if it is safe or suspicious.
+                        </p>
+
+                    </div>
+
+
+                    <div class="instruction">
+
+                        <span>3</span>
+
+                        <p>
+                            Build your security streak.
+                        </p>
+
+                    </div>
+
+
+                </div>
+
             </div>
-          </div>
 
-          <!-- HOW TO PLAY -->
 
-          <div class="instructions">
-            <h3>HOW TO PLAY</h3>
 
-            <div class="instruction-row">
-              <div class="instruction">
-                <span>1</span>
-                <p>Read the network event.</p>
-              </div>
+            <!-- START BUTTON -->
 
-              <div class="instruction">
-                <span>2</span>
-                <p>Decide if it is safe or suspicious.</p>
-              </div>
+            <button id="startBtn"
+                    class="start-btn">
 
-              <div class="instruction">
-                <span>3</span>
-                <p>Build your security streak.</p>
-              </div>
-            </div>
-          </div>
+                START CHALLENGE
 
-          <!-- START BUTTON -->
+                <span>→</span>
 
-          <button id="startBtn" class="start-btn">
-            START CHALLENGE
-            <span>→</span>
-          </button>
+            </button>
 
-          <p class="start-note">
-            🎁 Get a great score and claim a ThinkiX sticker!
-          </p>
+
+            <p class="start-note">
+
+                🎁 Complete the challenge and
+                claim a ThinkiX sticker!
+
+            </p>
+
         </div>
-      </section>
 
-      <!-- ============================= -->
-      <!-- GAME SCREEN -->
-      <!-- ============================= -->
+    </section>
 
-      <section id="gameScreen" class="screen">
-        <!-- HEADER -->
+
+
+    <!-- ====================================== -->
+    <!-- GAME SCREEN -->
+    <!-- ====================================== -->
+
+    <section id="gameScreen"
+             class="screen">
+
+
+        <!-- GAME HEADER -->
 
         <header class="game-header">
-          <div class="mini-brand">Thinki<span>X</span></div>
 
-          <div class="game-stats">
-            <div class="stat">
-              <small>TIME</small>
-              <strong id="timer">45</strong>
+
+            <div class="mini-brand">
+
+                Thinki<span>X</span>
+
             </div>
 
-            <div class="stat">
-              <small>SCORE</small>
-              <strong id="score">0</strong>
+
+            <div class="game-stats">
+
+
+                <div class="stat">
+
+                    <small>
+                        TIME
+                    </small>
+
+                    <strong id="timer">
+                        45
+                    </strong>
+
+                </div>
+
+
+                <div class="stat">
+
+                    <small>
+                        SCORE
+                    </small>
+
+                    <strong id="score">
+                        0
+                    </strong>
+
+                </div>
+
+
+                <div class="stat">
+
+                    <small>
+                        STREAK
+                    </small>
+
+                    <strong id="streak">
+                        0 🔥
+                    </strong>
+
+                </div>
+
+
             </div>
 
-            <div class="stat">
-              <small>STREAK</small>
-              <strong id="streak">0 🔥</strong>
-            </div>
-          </div>
         </header>
+
+
 
         <!-- FACTORY STATUS -->
 
         <div class="factory-status">
-          <div>
-            <span class="status-dot"></span>
-            THINKIX SMART FACTORY
-          </div>
 
-          <p>LIVE NETWORK MONITORING</p>
+
+            <div>
+
+                <span class="status-dot"></span>
+
+                THINKIX SMART FACTORY
+
+            </div>
+
+
+            <p>
+                SIMULATION MODE
+            </p>
+
+
         </div>
 
-        <!-- ============================= -->
-        <!-- NETWORK DIAGRAM -->
-        <!-- ============================= -->
+
+
+        <!-- ====================================== -->
+        <!-- INDUSTRIAL NETWORK -->
+        <!-- ====================================== -->
 
         <section class="network-panel">
-          <div class="network-title">INDUSTRIAL NETWORK</div>
 
-          <div class="network">
-            <!-- INTERNET -->
 
-            <div class="network-device internet">
-              <div class="device-icon">🌐</div>
-              <strong>Internet</strong>
+            <div class="network-title">
+
+                INDUSTRIAL NETWORK
+
             </div>
 
-            <div class="connection vertical"></div>
 
-            <!-- PFSENSE -->
+            <div class="network">
 
-            <div class="network-device firewall">
-              <div class="device-icon">🛡️</div>
-              <strong>pfSense</strong>
-              <small>Firewall</small>
+
+                <!-- INTERNET -->
+
+                <div class="network-device internet">
+
+                    <div class="device-icon">
+                        🌐
+                    </div>
+
+                    <strong>
+                        Internet
+                    </strong>
+
+                </div>
+
+
+                <div class="connection vertical"></div>
+
+
+                <!-- PFSENSE -->
+
+                <div class="network-device firewall">
+
+                    <div class="device-icon">
+                        🛡️
+                    </div>
+
+                    <strong>
+                        pfSense
+                    </strong>
+
+                    <small>
+                        Firewall
+                    </small>
+
+                </div>
+
+
+                <div class="connection vertical"></div>
+
+
+                <!-- CORE SWITCH -->
+
+                <div class="network-device switch">
+
+                    <div class="device-icon">
+                        🔀
+                    </div>
+
+                    <strong>
+                        Core Switch
+                    </strong>
+
+                </div>
+
+
+                <div class="horizontal-line"></div>
+
+
+
+                <!-- INDUSTRIAL DEVICES -->
+
+                <div class="device-row">
+
+
+                    <!-- SENSOR -->
+
+                    <div class="network-device sensor">
+
+                        <div class="device-icon">
+                            🌡️
+                        </div>
+
+                        <strong>
+                            Sensor
+                        </strong>
+
+                        <small>
+                            VLAN 10
+                        </small>
+
+                    </div>
+
+
+
+                    <!-- PLC -->
+
+                    <div class="network-device plc">
+
+                        <div class="device-icon">
+                            ⚙️
+                        </div>
+
+                        <strong>
+                            PLC
+                        </strong>
+
+                        <small>
+                            VLAN 20
+                        </small>
+
+                    </div>
+
+
+
+                    <!-- MQTT -->
+
+                    <div class="network-device mqtt">
+
+                        <div class="device-icon">
+                            📡
+                        </div>
+
+                        <strong>
+                            MQTT
+                        </strong>
+
+                        <small>
+                            Mosquitto Broker
+                        </small>
+
+                    </div>
+
+
+
+                    <!-- SURICATA -->
+
+                    <div class="network-device suricata">
+
+                        <div class="device-icon">
+                            👁️
+                        </div>
+
+                        <strong>
+                            Suricata
+                        </strong>
+
+                        <small>
+                            Security Monitoring
+                        </small>
+
+                    </div>
+
+
+                </div>
+
             </div>
 
-            <div class="connection vertical"></div>
-
-            <!-- CORE SWITCH -->
-
-            <div class="network-device switch">
-              <div class="device-icon">🔀</div>
-              <strong>Core Switch</strong>
-            </div>
-
-            <!-- CONNECTION LINE -->
-
-            <div class="horizontal-line"></div>
-
-            <!-- FACTORY DEVICES -->
-
-            <div class="device-row">
-              <div class="network-device sensor">
-                <div class="device-icon">🌡️</div>
-                <strong>Sensor</strong>
-                <small>VLAN 10</small>
-              </div>
-
-              <div class="network-device plc">
-                <div class="device-icon">⚙️</div>
-                <strong>PLC</strong>
-                <small>VLAN 20</small>
-              </div>
-
-              <div class="network-device mqtt">
-                <div class="device-icon">📡</div>
-                <strong>MQTT</strong>
-                <small>Broker</small>
-              </div>
-
-              <div class="network-device suricata">
-                <div class="device-icon">👁️</div>
-                <strong>Suricata</strong>
-                <small>Monitoring</small>
-              </div>
-            </div>
-          </div>
         </section>
 
-        <!-- ============================= -->
-        <!-- EVENT -->
-        <!-- ============================= -->
+
+
+        <!-- ====================================== -->
+        <!-- CYBER EVENT -->
+        <!-- ====================================== -->
 
         <section class="event-card">
-          <div class="event-heading">
-            <span class="pulse-icon">⚡</span>
 
-            <div>
-              <small>NETWORK EVENT DETECTED</small>
-              <h3>WHAT WOULD YOU DO?</h3>
+
+            <div class="event-heading">
+
+
+                <span class="pulse-icon">
+                    ⚡
+                </span>
+
+
+                <div>
+
+                    <small>
+                        NETWORK EVENT DETECTED
+                    </small>
+
+                    <h3>
+                        IS THIS SAFE OR A THREAT?
+                    </h3>
+
+                </div>
+
+
             </div>
-          </div>
 
-          <div class="event-message">
-            <div id="eventIcon" class="event-icon">📡</div>
 
-            <p id="eventText">Loading network event...</p>
-          </div>
 
-          <!-- ANSWER BUTTONS -->
+            <!-- EVENT MESSAGE -->
 
-          <div class="answer-buttons">
-            <button id="safeBtn" class="answer-btn safe-btn">
-              <span>✓</span>
+            <div class="event-message">
 
-              <div>
-                <strong>SAFE</strong>
-                <small>Normal Activity</small>
-              </div>
-            </button>
 
-            <button id="threatBtn" class="answer-btn threat-btn">
-              <span>!</span>
+                <div id="eventIcon"
+                     class="event-icon">
 
-              <div>
-                <strong>THREAT</strong>
-                <small>Security Risk</small>
-              </div>
-            </button>
-          </div>
+                    📡
 
-          <!-- FEEDBACK -->
+                </div>
 
-          <div id="feedback" class="feedback">
-            <strong id="feedbackTitle"></strong>
 
-            <p id="feedbackText"></p>
-          </div>
+                <p id="eventText">
+
+                    Loading network event...
+
+                </p>
+
+
+            </div>
+
+
+
+            <!-- ANSWER BUTTONS -->
+
+            <div class="answer-buttons">
+
+
+                <!-- SAFE -->
+
+                <button id="safeBtn"
+                        class="answer-btn safe-btn">
+
+
+                    <span>
+                        ✓
+                    </span>
+
+
+                    <div>
+
+                        <strong>
+                            SAFE
+                        </strong>
+
+                        <small>
+                            Normal Activity
+                        </small>
+
+                    </div>
+
+
+                </button>
+
+
+
+                <!-- THREAT -->
+
+                <button id="threatBtn"
+                        class="answer-btn threat-btn">
+
+
+                    <span>
+                        !
+                    </span>
+
+
+                    <div>
+
+                        <strong>
+                            THREAT
+                        </strong>
+
+                        <small>
+                            Security Risk
+                        </small>
+
+                    </div>
+
+
+                </button>
+
+
+            </div>
+
+
+
+            <!-- FEEDBACK -->
+
+            <div id="feedback"
+                 class="feedback">
+
+
+                <strong id="feedbackTitle"></strong>
+
+
+                <p id="feedbackText"></p>
+
+
+            </div>
+
+
         </section>
 
+
+
+        <!-- ====================================== -->
+        <!-- GAME PROGRESS -->
+        <!-- ====================================== -->
+
         <div class="game-progress">
-          <div class="progress-label">
-            <span>
-              Events Analysed:
-              <strong id="eventCount">0</strong>
-            </span>
 
-            <span>
-              Accuracy:
-              <strong id="accuracy">0%</strong>
-            </span>
-          </div>
 
-          <div class="progress-bar">
-            <div id="progressFill"></div>
-          </div>
+            <div class="progress-label">
+
+
+                <span>
+
+                    Events Analysed:
+
+                    <strong id="eventCount">
+                        0
+                    </strong>
+
+                </span>
+
+
+                <span>
+
+                    Accuracy:
+
+                    <strong id="accuracy">
+                        0%
+                    </strong>
+
+                </span>
+
+
+            </div>
+
+
+            <div class="progress-bar">
+
+                <div id="progressFill"></div>
+
+            </div>
+
+
         </div>
-      </section>
 
-      <!-- ============================= -->
-      <!-- RESULT SCREEN -->
-      <!-- ============================= -->
 
-      <section id="resultScreen" class="screen">
+    </section>
+
+
+
+    <!-- ====================================== -->
+    <!-- RESULT SCREEN -->
+    <!-- ====================================== -->
+
+    <section id="resultScreen"
+             class="screen">
+
+
         <div class="brand">
-          <h1>Thinki<span>X</span></h1>
-          <p>Because Every Device Matters.</p>
+
+            <h1>
+                Thinki<span>X</span>
+            </h1>
+
+            <p>
+                Because Every Device Matters.
+            </p>
+
         </div>
+
+
 
         <div class="result-content">
-          <div class="trophy">🏆</div>
 
-          <p class="result-label">CHALLENGE COMPLETE</p>
 
-          <h2>
-            FACTORY
-            <span>DEFENDED!</span>
-          </h2>
-
-          <div class="rank-card">
-            <small>YOUR SECURITY RANK</small>
-
-            <div id="rankIcon" class="rank-icon">🛡️</div>
-
-            <h3 id="rank">SECURITY ANALYST</h3>
-          </div>
-
-          <!-- RESULT STATS -->
-
-          <div class="result-stats">
-            <div>
-              <strong id="finalScore">0</strong>
-              <span>SCORE</span>
+            <div class="trophy">
+                🏆
             </div>
 
-            <div>
-              <strong id="finalCorrect">0/0</strong>
-              <span>CORRECT</span>
+
+            <p class="result-label">
+
+                CHALLENGE COMPLETE
+
+            </p>
+
+
+            <h2>
+
+                FACTORY
+
+                <span>
+                    DEFENDED!
+                </span>
+
+            </h2>
+
+
+
+            <!-- SECURITY RANK -->
+
+            <div class="rank-card">
+
+
+                <small>
+
+                    YOUR SECURITY RANK
+
+                </small>
+
+
+                <div id="rankIcon"
+                     class="rank-icon">
+
+                    🛡️
+
+                </div>
+
+
+                <h3 id="rank">
+
+                    SECURITY ANALYST
+
+                </h3>
+
+
             </div>
 
-            <div>
-              <strong id="finalAccuracy">0%</strong>
-              <span>ACCURACY</span>
+
+
+            <!-- RESULT STATISTICS -->
+
+            <div class="result-stats">
+
+
+                <div>
+
+                    <strong id="finalScore">
+                        0
+                    </strong>
+
+                    <span>
+                        SCORE
+                    </span>
+
+                </div>
+
+
+                <div>
+
+                    <strong id="finalCorrect">
+                        0/0
+                    </strong>
+
+                    <span>
+                        CORRECT
+                    </span>
+
+                </div>
+
+
+                <div>
+
+                    <strong id="finalAccuracy">
+                        0%
+                    </strong>
+
+                    <span>
+                        ACCURACY
+                    </span>
+
+                </div>
+
+
+                <div>
+
+                    <strong id="finalStreak">
+                        0
+                    </strong>
+
+                    <span>
+                        BEST STREAK
+                    </span>
+
+                </div>
+
+
             </div>
 
-            <div>
-              <strong id="finalStreak">0</strong>
-              <span>BEST STREAK</span>
+
+
+            <!-- REWARD -->
+
+            <div class="reward-box">
+
+
+                <div class="gift">
+
+                    🎁
+
+                </div>
+
+
+                <div>
+
+
+                    <strong>
+
+                        YOU COMPLETED THE CHALLENGE!
+
+                    </strong>
+
+
+                    <p>
+
+                        Show this screen to the ThinkiX team
+                        and claim your Impact Day sticker.
+
+                    </p>
+
+
+                </div>
+
+
             </div>
-          </div>
 
-          <!-- GIVEAWAY MESSAGE -->
 
-          <div class="reward-box">
-            <div class="gift">🎁</div>
 
-            <div>
-              <strong>YOU COMPLETED THE CHALLENGE!</strong>
+            <!-- PLAY AGAIN -->
 
-              <p>
-                Show this screen to the ThinkiX team and claim your Impact Day
-                sticker.
-              </p>
-            </div>
-          </div>
+            <button id="playAgainBtn"
+                    class="start-btn">
 
-          <button id="playAgainBtn" class="start-btn">
-            PLAY AGAIN
-            <span>↻</span>
-          </button>
+                PLAY AGAIN
 
-          <p class="result-footer">
-            Secure IoT Network Architecture for Smart Manufacturing
-          </p>
+                <span>
+                    ↻
+                </span>
+
+            </button>
+
+
+
+            <p class="result-footer">
+
+                Secure IoT Network Architecture
+                for Smart Manufacturing
+
+            </p>
+
+
         </div>
-      </section>
-    </main>
 
-    <script src="game.js"></script>
-  </body>
+
+    </section>
+
+
+</main>
+
+
+<!-- JAVASCRIPT -->
+
+<script src="game.js"></script>
+
+
+</body>
+
 </html>
